@@ -127,6 +127,8 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+/* VARIABLES */
+/* MIX-INS */
 * {
   box-sizing: border-box;
   font-size: 16px;
@@ -134,42 +136,107 @@ table {
 html,
 body {
   height: 100%;
-  background-color: #fff;
+  background-color: fff;
   color: #293340;
   font-family: 'Lora', serif;
+  font-size: 16px;
   line-height: 1.75rem;
   margin: auto;
+  width: 80%;
 }
-h1,
+h1 {
+  font-size: 3rem;
+  padding-bottom: 3%;
+  color: black;
+  font-family: 'PT Serif', serif;
+}
 h2,
-h3,
+h3 {
+  font-size: 1.75rem;
+  color: black;
+  padding-bottom: 3%;
+  font-family: 'PT Serif', serif;
+}
 h4,
 h5 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: black;
-  margin-bottom: 1rem;
+  padding-bottom: 3%;
   font-family: 'PT Serif', serif;
 }
 p {
   color: darkslategray;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   background-color: #fff;
+  padding-top: 1.5rem;
 }
-.nav {
+.container .nav {
+  /* Babby's first LESS-ening */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.125rem;
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
-  padding-left: 60%;
+  padding-left: 50%;
 }
-.nav a {
+.container .nav a {
   display: flex;
   color: #000;
   text-decoration: none;
+}
+.container .nav a:hover {
+  color: coral;
+}
+#header {
+  width: 100%;
+  background-color: lightgray;
+  padding-top: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+#header .header-image {
+  width: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#header h3 {
+  padding-bottom: 3%;
+  border-bottom: 1px dotted black;
+}
+#header .team-up-btn {
+  display: block;
+  background-color: #293340;
+  font-size: 1.175rem;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  #header .team-up-btn {
+    background: purple;
+  }
+}
+@media (max-width: 500px) {
+  #header .team-up-btn {
+    background: #442aec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#bottom {
+  background: darkgrey;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin: 0 auto;
+}
+#bottom .footer-content {
+  display: flex;
+  justify-content: center;
 }
