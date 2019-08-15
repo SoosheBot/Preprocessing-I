@@ -138,28 +138,28 @@ body {
   height: 100%;
   background-color: fff;
   color: #293340;
-  font-family: 'Lora', serif;
+  font-family: 'PT Serif', serif;
   font-size: 16px;
-  line-height: 1.75rem;
+  line-height: auto;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 3%;
-  color: black;
+  color: #000;
   font-family: 'PT Serif', serif;
 }
 h2,
 h3 {
   font-size: 1.75rem;
-  color: black;
+  color: #000;
   padding-bottom: 3%;
   font-family: 'PT Serif', serif;
 }
 h4,
 h5 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: black;
   padding-bottom: 3%;
   font-family: 'PT Serif', serif;
@@ -173,7 +173,8 @@ p {
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
-  padding-top: 1.5rem;
+  padding-top: 1.5%;
+  padding-bottom: 2%;
 }
 .container .nav {
   /* Babby's first LESS-ening */
@@ -207,7 +208,7 @@ p {
 }
 #header h3 {
   padding-bottom: 3%;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted #000;
 }
 #header .team-up-btn {
   display: block;
@@ -230,13 +231,42 @@ p {
     align-items: center;
   }
 }
-#bottom {
-  background: darkgrey;
-  padding-top: 2%;
-  padding-bottom: 5%;
-  margin: 0 auto;
+#top-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2%;
+  padding-top: 1%;
+  border-bottom: 1px dashed black;
 }
-#bottom .footer-content {
+#top-content .text-container {
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 2%;
+}
+#top-content .text-container .text-container-box div {
+  border: 1px dashed darkgrey;
+  padding: 2%;
+  padding-bottom: 2%;
+}
+#middle-content .years,
+#middle-content .company {
+  word-spacing: 10rem;
+}
+.footer-content {
+  width: 100%;
+}
+footer {
+  background: darkgray;
+}
+footer nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 5%;
+  font-size: 1rem;
+}
+footer nav a {
+  color: #000;
+  text-decoration: none;
 }

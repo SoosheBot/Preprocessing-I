@@ -53,9 +53,12 @@ table {
 @main-color: #293340;
 @second-color:purple;
 @third-color:rgb(68, 42, 236);
-@heading-font: 'Lora', serif;
 @button-text-color:#fff;
 @hover-color:coral;
+@default-font-color:#000;
+@heading-font: 'Lora', serif;
+@body-font: 'PT Serif', serif;
+
 
 /* MIX-INS */
 .center-align(){
@@ -76,9 +79,9 @@ html, body {
 	// background-color:red;
 	background-color: fff;
     color: #293340;
-    font-family:@heading-font;
+	font-family:@body-font; 
     font-size: 16px;
-    line-height: 1.75rem;
+    line-height: auto;
 	margin: auto;
 	width:90%;
 }
@@ -86,22 +89,22 @@ html, body {
 h1 {
 	font-size: 2rem;
 	padding-bottom:3%;
-    color:black;
+    color:@default-font-color;
 	font-family: 'PT Serif', serif;
 }
 
 h2, h3{
 	font-size:1.75rem;
-	color:black;
+	color:@default-font-color;
 	padding-bottom:3%;
-	font-family: 'PT Serif', serif; /* make a variable for this */
+	font-family:@body-font; 
 }
 
 h4, h5{
-	font-size:1rem;
+	font-size:1.25rem;
 	color:black;
 	padding-bottom:3%;
-	font-family: 'PT Serif', serif;
+	font-family:@body-font;
 }
 
 p {
@@ -110,13 +113,12 @@ p {
 	padding-bottom:3%;
 }
 
-
-
 .container {
     width: 100%;
 	margin: 0 auto;
 	background-color:#fff;
-	padding-top:1.5rem;
+	padding-top:1.5%;
+	padding-bottom:2%;
 		.nav { 	/* Babby's first LESS-ening */
 			display: flex;
 			flex-direction: row;
@@ -155,7 +157,7 @@ p {
 	}
 	h3{
 		padding-bottom:3%;
-		border-bottom:1px dotted black;
+		border-bottom:1px dotted @default-font-color;
 	}
 
 	.team-up-btn {
@@ -178,17 +180,50 @@ p {
 
 }
 
-
-#bottom{
-	background: darkgrey;
-	padding-top:2%;
-	padding-bottom:5%;
-	.footer-content{
-	display:flex;
-	justify-content:center;
-	}	
+#top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	margin-bottom: 2%;
+	padding-top:1%;
+    border-bottom: 1px dashed black;
+ .text-container {
+    width:48%;
+    padding: 0 1%;
+    padding-bottom: 2%;  
+.text-container-box div{
+	border:1px dashed darkgrey;
+	padding:2%;
+	padding-bottom: 2%; 
+}
+ }}
+ #middle-content{
+	.years, .company{
+		word-spacing:10rem;
+	}
 }
 
+
+.footer-content{
+	width: 100%;
+
+}
+footer {
+	background: darkgray;
+
+}
+footer nav {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	padding:5%;
+    font-size:1rem;
+}
+
+footer nav a {
+    color:@default-font-color;
+	text-decoration: none;
+}
 
 
   
@@ -209,7 +244,7 @@ p {
 // 				justify-content:space-between;
 // 				color: darkgray;
 // 				text-decoration: none;
-// 				border-bottom:1px solid black;
+// 				border-bottom:1px solid @default-font-color;
 // 				padding-top:1%;
 // 				padding-bottom:1%;
 // 				// .center-align()
