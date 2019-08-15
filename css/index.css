@@ -182,7 +182,7 @@ nav a {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.top-nav-links {
+nav a .top-nav-links {
   width: 100%;
   padding-left: 50%;
   display: flex;
@@ -190,7 +190,7 @@ nav a {
   justify-content: space-between;
   align-items: center;
 }
-a:hover {
+nav a .top-nav-links a:hover {
   color: coral;
 }
 #header {
@@ -206,11 +206,16 @@ a:hover {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-#header h3 {
+#header .header-image h3 {
   padding-bottom: 2.5rem;
   border-bottom: 1px dotted #000;
 }
-#header .team-up-btn {
+@media screen and (max-width: 500px) {
+  #header .header-image h3 .header-image {
+    width: 100%;
+  }
+}
+.team-up-btn {
   display: block;
   background-color: #293340;
   font-size: 1.175rem;
@@ -218,19 +223,9 @@ a:hover {
   padding: 0.5rem;
   border-radius: 10px;
 }
+/* MEDIA QUERIES */
 @media (max-width: 800px) {
-  #header .team-up-btn {
-    background: purple;
-  }
-}
-@media (max-width: 500px) {
-  #header .team-up-btn {
-    background: #442aec;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background: purple;
 }
 #top-content {
   width: 100%;
