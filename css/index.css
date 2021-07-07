@@ -1,1 +1,315 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* VARIABLES */
+/* MIX-INS */
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+  background-color: fff;
+  color: #293340;
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  line-height: auto;
+  margin: auto;
+  width: 90%;
+}
+h1 {
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+  color: #000;
+  font-family: 'PT Serif', serif;
+}
+h2,
+h3 {
+  font-size: 1.75rem;
+  color: #000;
+  padding-bottom: 2.5rem;
+  font-family: 'PT Serif', serif;
+}
+h4,
+h5 {
+  font-size: 1.25rem;
+  color: black;
+  padding-bottom: 2.5rem;
+  font-family: 'PT Serif', serif;
+}
+p {
+  color: darkslategray;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav .top-nav-links {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .top-nav-links a {
+  color: black;
+  text-decoration: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+nav .top-nav-links a:hover {
+  color: coral;
+}
+@media (max-width: 500px) {
+  nav .top-nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#header {
+  width: 100%;
+  background-color: lightgray;
+  padding-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+#header .header-image {
+  width: 70%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#header .header-image h3 {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px dotted #000;
+}
+#header .header-image h3 .heading .text-container {
+  width: 500%;
+}
+.button-parent .team-up-btn {
+  display: block;
+  background-color: #293340;
+  color: white;
+  margin: 0 10px 20px;
+  width: 140px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .button-parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main-text {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1%;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.main-text .main-text-container {
+  width: 48%;
+  padding: 0 2rem;
+}
+.main-text .list div {
+  padding: 1rem;
+  border: 1px solid black;
+}
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+  img h1,
+  img h2,
+  img h3,
+  img h4,
+  img h5,
+  img h6 {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img h1 p,
+  img h2 p,
+  img h3 p,
+  img h4 p,
+  img h5 p,
+  img h6 p {
+    padding: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.tbl {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  min-height: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cell {
+  flex: 1;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+#bottom .footer-content {
+  width: 100%;
+}
+#bottom .footer-content footer {
+  background: darkgray;
+  padding: 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}

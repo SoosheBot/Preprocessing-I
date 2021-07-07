@@ -48,12 +48,219 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+
+
+/* VARIABLES */
+@main-color: #293340;
+@second-color:purple;
+@third-color:rgb(68, 42, 236);
+@button-text-color:#fff;
+@hover-color:coral;
+@default-font-color:#000;
+@heading-font: 'Lora', serif;
+@body-font: 'PT Serif', serif;
+@standard-bottom-padding:2.5rem;
+@standard-border-padding:2.0rem;
+
+/* MIX-INS */
+.center-align(){
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 16px;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	// background-color:red;
+	background-color: fff;
+    color: #293340;
+	font-family:@body-font; 
+    font-size: 16px;
+    line-height: auto;
+	margin: auto;
+	width:90%;
 }
 
+h1 {
+	font-size: 2rem;
+	padding-bottom:@standard-bottom-padding;
+    color:@default-font-color;
+	font-family:@heading-font;
+	font-family:@heading-font;
+}
+
+h2, h3{
+	font-size:1.75rem;
+	color:@default-font-color;
+	padding-bottom:@standard-bottom-padding;
+	font-family:@body-font; 
+	font-family:@heading-font;
+}
+
+h4, h5{
+	font-size:1.25rem;
+	color:black;
+	padding-bottom:@standard-bottom-padding;
+	font-family:@body-font;
+}
+
+p {
+	color:darkslategray;
+	padding-top:@standard-border-padding;
+	padding-bottom:@standard-bottom-padding;
+}
+
+
+nav {
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-end;
+	.top-nav-links{
+		width:40%;		
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items:center;
+		
+	a {
+		color:black;
+		text-decoration:none;
+		padding-top:1.5rem;
+		padding-bottom:1.5rem;
+	}			
+	a:hover{
+		color:@hover-color;
+	}
+	@media (max-width:500px) {
+		display:flex;
+		flex-direction:column;
+		.center-align();
+	}
+}}
+
+
+
+
+#header{
+	width:100%;
+	background-color:lightgray;
+	padding-top:@standard-bottom-padding;
+	padding-left:@standard-border-padding;
+	padding-right:@standard-border-padding;
+	padding-bottom:@standard-border-padding;
+		.header-image{ 
+			width:70%;
+			padding-top:@standard-border-padding;
+			padding-bottom:@standard-border-padding;	
+		h3{
+			padding-bottom:@standard-bottom-padding;
+			border-bottom:1px dotted @default-font-color;
+		.heading .text-container{
+			width:500%;
+		}				
+}}}
+
+.button-parent{
+  .team-up-btn {
+   display: block;
+   background-color: @main-color;
+   color:white;
+   margin: 0 10px 20px;
+   width: 140px;
+   height: 40px;
+   font-size: 1rem;
+   border-radius: 5px;
+}
+   @media (max-width:500px) {
+	 .center-align();
+   }
+  }
+
+
+.main-text{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 1%;
+		justify-content: space-around;
+		margin-top:5%;
+		margin-bottom:5%;
+
+		.main-text-container {
+			width:48%;
+			padding: 0 2rem;
+		}
+
+		.list div{
+			padding:1rem;
+			border:1px solid black;
+		}
+	}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+	img{
+		display:none;
+	
+
+	h1,h2,h3,h4,h5,h6{
+		padding:1rem;
+		.center-align();
+	
+	p{
+		padding:@standard-bottom-padding;
+		.center-align();
+	
+	
+	}}}}
+
+
+
+	.tbl {
+		display: flex;
+		flex-direction:column;
+		}
+	  .row {
+		display: flex;
+		min-height:1rem;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+	  }
+	  .cell {
+		flex: 1;
+		border-bottom: 1px solid lightgray;
+		border-top: 1px solid lightgray;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		padding:1rem;
+	  }
+	  
+		
+
+
+
+#bottom{
+.footer-content{
+	width: 100%;
+
+footer {
+		background: darkgray;
+		padding:1.5rem;
+		font-size:1rem;
+		display:flex;
+		justify-content:center; 
+
+
+}}}
